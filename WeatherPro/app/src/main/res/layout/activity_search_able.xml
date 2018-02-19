@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_search_abale"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ice.ehsanur.weatherpro.Activity.SearchAble">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/searchLayout">
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/serachEdit"
+                android:layout_weight="1"
+                android:hint="Search your City"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:onClick="searchButton"
+                android:id="@+id/searchButton"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:background="#8396b6"
+                android:padding="1dp"
+                android:src="@mipmap/searchicon"/>
+        </LinearLayout>
+        <ListView
+            android:layout_marginTop="10dp"
+            android:id="@+id/serachShowResutlList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ListView>
+    </LinearLayout>
+</LinearLayout>

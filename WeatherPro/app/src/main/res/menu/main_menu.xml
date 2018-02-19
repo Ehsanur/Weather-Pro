@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/addlocation"
+        app:showAsAction="always"
+        android:title=""
+        android:onClick="addLocation"
+        android:icon="@drawable/location" />
+    <item
+        android:id="@+id/sync"
+        app:showAsAction="always"
+        android:title=""
+        android:onClick="reFresh"
+        android:icon="@drawable/syncwhite" />
+    <item
+        app:showAsAction="never"
+        android:id="@+id/setting"
+        android:title="Settings" />
+    <item
+        app:showAsAction="never"
+        android:title="Help"
+        android:id="@+id/Help"/>
+    <item
+        android:onClick="exitapp"
+        app:showAsAction="never"
+        android:title="Exit"
+        android:id="@+id/exit" />
+
+</menu>
